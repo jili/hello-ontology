@@ -16,6 +16,12 @@ import org.springframework.stereotype.Repository;
 import com.joy.company.Constants;
 import com.joy.company.model.Employee;
 
+/**
+ * This is a native RDF Repository, which converts {@link Employee} entity to
+ * RDF data and stores them to local disk.
+ * 
+ * @author Joy Li <joooy.li@gmail.com>
+ */
 @Repository
 public class EmployeeRepository implements CustomRepository<Employee, String> {
 	private org.eclipse.rdf4j.repository.Repository repo;
